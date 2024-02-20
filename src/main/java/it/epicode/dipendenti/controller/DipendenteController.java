@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 @RestController
+@RequestMapping("/api/dipendenti")
 public class DipendenteController {
 
     @Autowired

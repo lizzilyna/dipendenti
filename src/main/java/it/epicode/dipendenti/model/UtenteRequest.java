@@ -4,7 +4,11 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Data
-public class LoginRequest {
+public class UtenteRequest {
+    @NotBlank(message = "campo obbligatorio")
+    private String nome;
+    @NotBlank(message = "campo obbligatorio")
+    private String cognome;
     @NotBlank(message = "campo obbligatorio")
     private String username;
     @NotBlank(message = "campo obbligatorio")
